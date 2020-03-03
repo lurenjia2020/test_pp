@@ -1,0 +1,13 @@
+性别限定男女，默认为男评分:     
+字段名称	字段类型	大小	字段说明	字段备注
+Sno	varchar2	10	学生学号	主键
+Sname	varchar2	8	学生姓名	
+Ssex	varchar2	2	性别	Sex in (‘男’,’女’),
+默认值 ‘男’
+Sid	varchar2	18	身份证号	唯一键
+Sbirthday	date		出生年月	
+Sdept	varchar2	20	所在系	
+create table Student(
+Sno varchar2(10) primary key,
+Sname varchar2(8),
+Ssex varchar2(2) default’男’check(sex in’男’,’
